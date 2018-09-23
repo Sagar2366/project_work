@@ -17,8 +17,11 @@ before_install:
 
 script:
   sonar-scanner
-  bash dockercommands
 
 cache:
   directories:
     - "node_modules"
+
+deploy:
+  provider: script
+  script: bash scripts/dockercommands.sh
