@@ -1,6 +1,6 @@
 #!/bin/bash
 docker build -t sampleapp1 .
-docker run -p 127.0.0.1:4378 -d sampleapp1
+docker run --ip 127.0.0.1 -p 4378:4378 -d sampleapp1
 curl -i localhost:4378
 # git add .
 # git commit -m "after docker operations"
