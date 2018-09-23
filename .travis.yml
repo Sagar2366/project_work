@@ -21,6 +21,7 @@ script:
 cache:
   directories:
     - "node_modules"
+    - ".scannerwork"
 
 deploy:
   provider: script
