@@ -17,6 +17,7 @@ before_install:
 
 script:
   sonar-scanner
+  bash dockercommands
 
 cache:
   directories:
