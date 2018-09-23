@@ -1,6 +1,23 @@
+sudo: required
 dist: trusty
+
+language: node_js
+node_js:
+  - "7"
+
 addons: 
   sonarcloud:
     organization: "sagar2366-github"
+
+services: 
+  - docker
+
+before_install:
+  - npm install -g http
+
 script:
   sonar-scanner
+
+cache:
+  directories:
+    - "node_modules"
