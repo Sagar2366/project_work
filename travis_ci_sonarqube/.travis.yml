@@ -1,0 +1,6 @@
+dist: trusty
+addons: 
+  sonarcloud:
+    organization: "sagar2366-github"
+script:
+  sonar-scanner
