@@ -22,7 +22,5 @@
 pwd
 ls -al
 ifconfig
-ping -c 2 myartifactory.org/artifactory
-#ping -c 2 192.168.31.182
-#cd/Home/sagar/Desktop
+ping -c 2 10.136.60.50
 #curl -u admin:Utekar@2366 -X PUT "http://192.168.31.182/artifactory/docker-local/file.txt" -T file1.txt
