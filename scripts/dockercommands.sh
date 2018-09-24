@@ -20,4 +20,4 @@
 # docker tag hello-world docker.artifactory/ubuntu:latest
 # docker push docker.artifactory/ubuntu:latest
 
-curl -u admin:Utekar@2366 -X PUT "http://192.168.31.182/artifactory/docker-local/file.txt" -T "https://github.com/Sagar2366/project_work/blob/master/file.txt"
+curl -u admin:Utekar@2366 -X PUT "http://192.168.31.182/artifactory/docker-local/file.txt" -T file1.txt
