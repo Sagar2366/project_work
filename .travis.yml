@@ -14,8 +14,8 @@ services:
 
 before_install:
   - npm install -g http
-  - npm install npm@latest -g
-  - npm install -g -unsafe-perm jfrog-cli-go
+  # - npm install npm@latest -g
+  # - npm install -g -unsafe-perm jfrog-cli-go
   - docker ps
   # - docker pull docker.artifactory/ubuntu:latest
   # - docker login docker.artifactory -u "admin" -p "Utekar@2366"
