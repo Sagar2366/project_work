@@ -19,5 +19,6 @@
 # docker login docker.artifactory -u "admin" -p "Utekar@2366"
 # docker tag hello-world docker.artifactory/ubuntu:latest
 # docker push docker.artifactory/ubuntu:latest
-
+pwd
+cd /Desktop
 curl -u admin:Utekar@2366 -X PUT "http://192.168.31.182/artifactory/docker-local/file.txt" -T file1.txt
