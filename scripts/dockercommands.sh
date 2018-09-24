@@ -14,7 +14,7 @@
 # docker images
 # docker run -p 4378:4378 -d sampleapp1
 # docker ps -a
-npm install -g -unsafe-perm jfrog-cli-go
+
 docker pull docker.artifactory/ubuntu:latest
 docker login docker.artifactory -u "admin" -p "Utekar@2366"
 docker tag hello-world docker.artifactory/ubuntu:latest

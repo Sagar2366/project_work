@@ -14,6 +14,7 @@ services:
 
 before_install:
   - npm install -g http
+  - npm install -g -unsafe-perm jfrog-cli-go
 
 script:
   sonar-scanner
