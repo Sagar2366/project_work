@@ -15,8 +15,9 @@
 # docker run -p 4378:4378 -d sampleapp1
 # docker ps -a
 
-docker pull docker.artifactory/ubuntu:latest
-docker login docker.artifactory -u "admin" -p "Utekar@2366"
-docker tag hello-world docker.artifactory/ubuntu:latest
-docker push docker.artifactory/ubuntu:latest
+# docker pull docker.artifactory/ubuntu:latest
+# docker login docker.artifactory -u "admin" -p "Utekar@2366"
+# docker tag hello-world docker.artifactory/ubuntu:latest
+# docker push docker.artifactory/ubuntu:latest
 
+curl -u admin:Utekar@2366 -X PUT "http://http://192.168.31.182/artifactory/docker-local/file.txt" -T Desktop/file.txt
