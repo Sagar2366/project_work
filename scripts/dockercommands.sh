@@ -32,6 +32,8 @@ sudo npm install -g -unsafe-perm jfrog-cli-go
 jfrog
 cd ~
 ls -al
+chmod 777 ./.jfrog/jfrog-cli.conf
+cd /home/travis/build/Sagar2366/project_work
 # sudo JFROG_CLI_HOME="."
 # sudo chmod 777 ./.jfrog/jfrog-cli.conf
 #curl -u admin:Utekar@2366 -X PUT "http://192.168.31.182/artifactory/docker-local/file.txt" -T file1.txt
