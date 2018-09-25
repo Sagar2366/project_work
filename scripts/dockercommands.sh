@@ -31,7 +31,7 @@ sudo apt-get install -y build-essential
 sudo npm install -g -unsafe-perm jfrog-cli-go
 jfrog
 pwd
-sudo jfrog rt u --spec filespecs.json
+sudo jfrog rt u --url=http://10.136.60.50/artifactory --spec filespecs.json
 #ls -al
 #sudo jfrog 
 # sudo jfrog rt c --url=http://10.136.60.50/artifactory/  --user=admin --password=admin rt-server-1
