@@ -30,13 +30,13 @@ sudo npm install npm@latest -g
 sudo apt-get install -y build-essential
 sudo npm install -g -unsafe-perm jfrog-cli-go
 jfrog
-sudo JFROG_CLI_HOME="."
-sudo chmod 777 ./.jfrog/jfrog-cli.conf
+# sudo JFROG_CLI_HOME="."
+# sudo chmod 777 ./.jfrog/jfrog-cli.conf
 #curl -u admin:Utekar@2366 -X PUT "http://192.168.31.182/artifactory/docker-local/file.txt" -T file1.txt
 #curl -u admin:admin -X PUT "http://10.136.60.50/artifactory/docker-local/somefile.txt" -T somefile.txt
 
 
-sudo jfrog rt c rt-server-5 --url=http://10.136.60.50/artifactory/ --user=admin --password=admin
+sudo jfrog rt c rt-server-6 --url=http://10.136.60.50/artifactory/ --user=admin --password=admin
 # [Info] Encrypting password...
 
 # (ubuntu@ubuntu)[~/.jfrog]sudo chmod 777 jfrog-cli.conf 
