@@ -30,7 +30,9 @@ sudo npm install npm@latest -g
 sudo apt-get install -y build-essential
 sudo npm install -g -unsafe-perm jfrog-cli-go
 jfrog
-# cd ~
+cd ~
+ls -al
+cd /.jfrog
 ls -al
 # chmod 777 ~/.jfrog/jfrog-cli.conf
 # cd /home/travis/build/Sagar2366/project_work
