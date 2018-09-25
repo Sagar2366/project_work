@@ -31,8 +31,9 @@ sudo apt-get install -y build-essential
 sudo npm install -g -unsafe-perm jfrog-cli-go
 jfrog
 pwd
-ls -al
-sudo jfrog rt use rt-server-9
+#ls -al
+sudo jfrog rt c show
+#sudo jfrog rt use rt-server-9
 # chmod 777 ~/.jfrog/jfrog-cli.conf
 # cd /home/travis/build/Sagar2366/project_work
 # sudo JFROG_CLI_HOME="."
@@ -47,7 +48,7 @@ sudo jfrog rt use rt-server-9
 #sudo jfrog rt c rt-server-6 --url=http://10.136.60.50/artifactory/ --user=admin --password=admin
 # [Info] Encrypting password...
 #chmod 777 /home/travis/build/Sagar2366/project_work/.jfrog/jfrog-cli.conf
-ls -al
+#ls -al
 # sudo jfrog rt c --url=http://10.136.60.50/artifactory/  --user=admin --password=admin
 # sudo jfrog rt c show --url=http://10.136.60.50/artifactory/  --user=admin --password=admin rt-server-5
 # chmod 777 ~/.jfrog/jfrog-cli.conf
@@ -86,3 +87,45 @@ pwd
 #     "failure": 0
 #   }
 # }
+# root@GS-1557:~/.jfrog# sudo jfrog rt c show
+# Server ID: server1
+# Url: http://192.168.31.182/artifactory/docker-local/
+# User: admin
+# Password: ***
+# Default:  false
+
+# Server ID: rt-server-2
+# Url: http://10.136.60.50/artifactory/
+# User: admin
+# Password: ***
+# Default:  false
+
+# Server ID: rt-server-3
+# Url: http://10.136.60.50/artifactory/
+# User: admin
+# Password: ***
+# Default:  false
+
+# Server ID: rt-server-5
+# Url: http://10.136.60.50/artifactory/
+# User: admin
+# Password: ***
+# Default:  false
+
+# Server ID: rt-server-6
+# Url: http://10.136.60.50/artifactory/
+# User: admin
+# Password: ***
+# Default:  false
+
+# Server ID: rt-server-7
+# Url: http://10.136.60.50/artifactory/
+# User: admin
+# Password: ***
+# Default:  false
+
+# Server ID: rt-server-9
+# Url: http://10.136.60.50/artifactory/
+# User: admin
+# Password: ***
+# Default:  true
