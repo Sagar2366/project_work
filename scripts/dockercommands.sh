@@ -41,16 +41,17 @@ ls -al
 # ls -al
 # cd .jfrog
 # cat jfrog-cli.conf
-sudo jfrog rt c rt-server-6 --url=http://10.136.60.50/artifactory/ --user=admin --password=admin
+sudo jfrog rt use rt-server-4
+#sudo jfrog rt c rt-server-6 --url=http://10.136.60.50/artifactory/ --user=admin --password=admin
 # [Info] Encrypting password...
-chmod 777 /home/travis/build/Sagar2366/project_work/.jfrog/jfrog-cli.conf
+#chmod 777 /home/travis/build/Sagar2366/project_work/.jfrog/jfrog-cli.conf
 ls -al
 # chmod 777 ~/.jfrog/jfrog-cli.conf
 # ls -al
 # (ubuntu@ubuntu)[~/.jfrog]sudo chmod 777 jfrog-cli.conf 
-sudo jfrog rt ping --server-id=rt-server-4
+#sudo jfrog rt ping --server-id=rt-server-4
 
-sudo jfrog rt ping --url=http://10.136.60.50/artifactory
+# sudo jfrog rt ping --url=http://10.136.60.50/artifactory
 
 sudo jfrog rt u file.txt docker-local/file.txt
 # (ubuntu@ubuntu)[/]jfrog rt u file.txt docker-local/file.txt
