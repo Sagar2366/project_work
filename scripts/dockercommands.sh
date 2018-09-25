@@ -52,7 +52,7 @@ ls -al
 #sudo jfrog rt ping --server-id=rt-server-4
 
 # sudo jfrog rt ping --url=http://10.136.60.50/artifactory
-sudo jfrog rt c show
+#sudo jfrog rt c show
 pwd
 sudo jfrog rt u file.txt docker-local/file.txt
 # (ubuntu@ubuntu)[/]jfrog rt u file.txt docker-local/file.txt
