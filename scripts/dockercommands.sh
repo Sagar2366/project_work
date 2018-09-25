@@ -22,7 +22,7 @@
 pwd
 ls -al
 ifconfig
-# ping -c 2 10.136.60.
+ping -c 2 10.136.60.50
 
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt-get install -y nodejs
