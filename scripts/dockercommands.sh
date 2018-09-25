@@ -33,7 +33,8 @@ jfrog
 sudo export JFROG_CLI_HOME=.
 #curl -u admin:Utekar@2366 -X PUT "http://192.168.31.182/artifactory/docker-local/file.txt" -T file1.txt
 #curl -u admin:admin -X PUT "http://10.136.60.50/artifactory/docker-local/somefile.txt" -T somefile.txt
-sudo cd .jfrog
+# sudo cd .
+sudo cat jfrog
 sudo chmod 777 jfrog-cli.conf
 sudo jfrog rt c rt-server-1 --url=http://10.136.60.50/artifactory/ --user=admin --password=admin
 # [Info] Encrypting password...
