@@ -30,6 +30,8 @@ sudo npm install npm@latest -g
 sudo apt-get install -y build-essential
 sudo npm install -g -unsafe-perm jfrog-cli-go
 ifconfig
+uname
+hostname
 jfrog
 pwd
 sudo jfrog rt u --url=http://10.136.60.50/artifactory --spec filespecs.json
