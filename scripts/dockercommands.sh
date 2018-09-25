@@ -45,7 +45,7 @@ cd /home/travis/build/Sagar2366/project_work
 # [Info] Encrypting password...
 # ls -al
 # (ubuntu@ubuntu)[~/.jfrog]sudo chmod 777 jfrog-cli.conf 
-sudo jfrog rt ping --url=http://http://10.136.60.50/artifactory/
+sudo jfrog rt ping --url=http://10.136.60.50/artifactory/
 sudo jfrog rt u file.txt docker-local/file.txt
 # (ubuntu@ubuntu)[/]jfrog rt u file.txt docker-local/file.txt
 # [Info] [Thread 2] Uploading artifact: file.txt
