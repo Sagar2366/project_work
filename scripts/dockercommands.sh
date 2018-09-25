@@ -34,11 +34,10 @@ jfrog
 # sudo chmod 777 ./.jfrog/jfrog-cli.conf
 #curl -u admin:Utekar@2366 -X PUT "http://192.168.31.182/artifactory/docker-local/file.txt" -T file1.txt
 #curl -u admin:admin -X PUT "http://10.136.60.50/artifactory/docker-local/somefile.txt" -T somefile.txt
-
-
+ls -al
 sudo jfrog rt c rt-server-6 --url=http://10.136.60.50/artifactory/ --user=admin --password=admin
 # [Info] Encrypting password...
-
+ls -al
 # (ubuntu@ubuntu)[~/.jfrog]sudo chmod 777 jfrog-cli.conf 
 
 # (ubuntu@ubuntu)[/]jfrog rt u file.txt docker-local/file.txt
