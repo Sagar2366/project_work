@@ -20,9 +20,9 @@
 # docker tag hello-world docker.artifactory/ubuntu:latest
 # docker push docker.artifactory/ubuntu:latest
 pwd
-ls -al
-ifconfig
-ping -c 2 10.136.60.50
+# ls -al
+# ifconfig
+# ping -c 2 10.136.60.50
 
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt-get install -y nodejs
@@ -31,7 +31,7 @@ sudo apt-get install -y build-essential
 sudo npm install -g -unsafe-perm jfrog-cli-go
 jfrog
 cd ~
-ls -al
+# ls -al
 chmod 777 ./.jfrog/jfrog-cli.conf
 cd /home/travis/build/Sagar2366/project_work
 # sudo JFROG_CLI_HOME="."
@@ -43,7 +43,7 @@ cd /home/travis/build/Sagar2366/project_work
 # cat jfrog-cli.conf
 #sudo jfrog rt c rt-server-6 --url=http://10.136.60.50/artifactory/ --user=admin --password=admin
 # [Info] Encrypting password...
-ls -al
+# ls -al
 # (ubuntu@ubuntu)[~/.jfrog]sudo chmod 777 jfrog-cli.conf 
 sudo jfrog rt ping --url=http://http://10.136.60.50/artifactory/
 sudo jfrog rt u file.txt docker-local/file.txt
