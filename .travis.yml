@@ -23,13 +23,17 @@ before_install:
   # - docker push docker.artifactory/ubuntu:latest
 
 script:
-  sonar-scanner
+  - sonar-scanner
+  - wget https://dl.bintray.com/jfrog/jfrog-cli-go/1.7.1/jfrog-cli-linux-amd64/jfrog
+  - chmod +x jfrog
+  - ./jfrog rt config --url $ARTIFACTORY_URL --user $ARTIFACTORY_USER --apikey $ARTIFACTORY_PASSWORD
+  - ./jfrog rt u "multi*/*.jar" travisci-generic-local --build-name=travisci-generic-artifactory --build-number=$TRAVIS_BUILD_NUMBER --flat=false
 
-cache:
-  directories:
-    - "node_modules"
-    - ".scannerwork"
+# cache:
+#   directories:
+#     - "node_modules"
+#     - ".scannerwork"
 
-deploy:
-  provider: script
-  script: bash scripts/dockercommands.sh
+# deploy:
+#   provider: script
+#   script: bash scripts/dockercommands.sh
