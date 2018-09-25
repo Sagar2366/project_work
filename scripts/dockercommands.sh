@@ -41,13 +41,13 @@ ls -al
 # ls -al
 # cd .jfrog
 # cat jfrog-cli.conf
-sudo jfrog rt use --url=http://10.136.60.50/artifactory/ rt-server-5  --user=admin --password=admin
+sudo jfrog rt use --url=http://10.136.60.50/artifactory/ --user=admin --password=admin rt-server-5  
 #sudo jfrog rt c rt-server-6 --url=http://10.136.60.50/artifactory/ --user=admin --password=admin
 # [Info] Encrypting password...
 #chmod 777 /home/travis/build/Sagar2366/project_work/.jfrog/jfrog-cli.conf
 ls -al
-sudo jfrog rt c --url=http://10.136.60.50/artifactory/  --user=admin --password=admin show
-sudo jfrog rt c use --url=http://10.136.60.50/artifactory/  --user=admin --password=admin rt-server-5
+# sudo jfrog rt c --url=http://10.136.60.50/artifactory/  --user=admin --password=admin show
+# sudo jfrog rt c --url=http://10.136.60.50/artifactory/  --user=admin --password=admin rt-server-5
 # chmod 777 ~/.jfrog/jfrog-cli.conf
 # ls -al
 # (ubuntu@ubuntu)[~/.jfrog]sudo chmod 777 jfrog-cli.conf 
