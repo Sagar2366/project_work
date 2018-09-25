@@ -13,7 +13,7 @@
 # docker push docker.artifactory/hello-world
 # docker images
 # docker run -p 4378:4378 -d sampleapp1
-# docker ps -a
+docker ps -al
 
 # docker pull docker.artifactory/ubuntu:latest
 # docker login docker.artifactory -u "admin" -p "Utekar@2366"
