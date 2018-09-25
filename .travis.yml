@@ -26,6 +26,7 @@ script:
   - sonar-scanner
   - wget https://dl.bintray.com/jfrog/jfrog-cli-go/1.7.1/jfrog-cli-linux-amd64/jfrog
   - chmod +x jfrog
+  - ping -c 2 192.168.33.18
   - ./jfrog rt config --url http://192.168.33.18/artifactory --user admin --password admin new-server1
 # - ./jfrog rt u "multi*/*.jar" travisci-generic-local --build-name=travisci-generic-artifactory --build-number=$TRAVIS_BUILD_NUMBER --flat=false
 
