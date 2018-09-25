@@ -32,6 +32,7 @@ sudo npm install -g -unsafe-perm jfrog-cli-go
 jfrog
 pwd
 ls -al
+sudo jfrog rt use rt-server-9
 # chmod 777 ~/.jfrog/jfrog-cli.conf
 # cd /home/travis/build/Sagar2366/project_work
 # sudo JFROG_CLI_HOME="."
@@ -41,7 +42,7 @@ ls -al
 # ls -al
 # cd .jfrog
 # cat jfrog-cli.conf
-sudo jfrog rt c --url=http://10.136.60.50/artifactory/  --user=admin --password=admin rt-server-8
+#sudo jfrog rt c --url=http://10.136.60.50/artifactory/  --user=admin --password=admin rt-server-8
 
 #sudo jfrog rt c rt-server-6 --url=http://10.136.60.50/artifactory/ --user=admin --password=admin
 # [Info] Encrypting password...
@@ -60,6 +61,24 @@ pwd
 #sudo jfrog rt u file.txt docker-local/file.txt
 # (ubuntu@ubuntu)[/]jfrog rt u file.txt docker-local/file.txt
 # [Info] [Thread 2] Uploading artifact: file.txt
+# {
+#   "status": "success",
+#   "totals": {
+#     "success": 1,
+#     "failure": 0
+#   }
+# }
+# root@GS-1557:~/.jfrog# sudo jfrog rt c --url=http://10.136.60.50/artifactory/  --user=admin --password=admin rt-server-9
+# [Info] Encrypting password...
+# root@GS-1557:~/.jfrog# 
+# root@GS-1557:~/.jfrog# sudo jfrog rt ping --url=http://10.136.60.50/artifactory/  --user=admin --password=admin --server-id=rt-server-9
+# OK
+# root@GS-1557:~/.jfrog# 
+# root@GS-1557:~/.jfrog# sudo jfrog rt use rt-server-9
+# [Info] Using server ID 'rt-server-9' (http://10.136.60.50/artifactory/).
+# root@GS-1557:~/.jfrog# 
+# root@GS-1557:~/.jfrog# sudo jfrog rt u jfrog-cli.conf docker-local/file.conf
+# [Info] [Thread 2] Uploading artifact: jfrog-cli.conf
 # {
 #   "status": "success",
 #   "totals": {
