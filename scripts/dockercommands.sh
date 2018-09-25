@@ -32,8 +32,9 @@ sudo npm install -g -unsafe-perm jfrog-cli-go
 jfrog
 pwd
 #ls -al
-sudo jfrog rt c --url=http://10.136.60.50/artifactory/  --user=admin --password=admin rt-server-1
-sudo jfrog rt c show
+#sudo jfrog 
+# sudo jfrog rt c --url=http://10.136.60.50/artifactory/  --user=admin --password=admin rt-server-1
+# sudo jfrog rt c show
 #sudo jfrog rt use rt-server-9
 # chmod 777 ~/.jfrog/jfrog-cli.conf
 # cd /home/travis/build/Sagar2366/project_work

@@ -1,0 +1,9 @@
+{
+    "files": [
+        {
+            "pattern":"Dockerfile",
+            "target":"docker-local/Dockerfiles/",
+            "props": "type=zip;status=ready"
+        }
+    ]
+}
