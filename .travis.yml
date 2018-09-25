@@ -24,7 +24,7 @@ before_install:
 
 script:
   - sonar-scanner
-  - wget https://dl.bintray.com/jfrog/jfrog-cli-go/1.7.1/jfrog-cli-linux-amd64/jfrog
+  #- wget https://dl.bintray.com/jfrog/jfrog-cli-go/1.7.1/jfrog-cli-linux-amd64/jfrog
   - chmod +x jfrog
   - ping -c 2 192.168.33.18
   - curl -I -k -v http://192.168.33.18:8081/artifactory/api/system/ping
