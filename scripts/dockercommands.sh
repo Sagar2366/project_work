@@ -31,6 +31,7 @@ sudo apt-get install -y build-essential
 sudo npm install -g -unsafe-perm jfrog-cli-go
 jfrog
 pwd
+sudo jfrog rt u --spec filespecs.json
 #ls -al
 #sudo jfrog 
 # sudo jfrog rt c --url=http://10.136.60.50/artifactory/  --user=admin --password=admin rt-server-1
@@ -131,3 +132,13 @@ pwd
 # User: admin
 # Password: ***
 # Default:  true
+# root@GS-1557:/home/sagar/project_work# sudo jfrog rt u --spec filespecs.json
+# [Info] [Thread 2] Uploading artifact: Dockerfile
+# {
+#   "status": "success",
+#   "totals": {
+#     "success": 1,
+#     "failure": 0
+#   }
+# }
+# root@GS-1557:/home/sagar/project_work# 

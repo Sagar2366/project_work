@@ -2,7 +2,7 @@
     "files": [
         {
             "pattern":"Dockerfile",
-            "target":"docker-local/Dockerfiles/",
+            "target":"docker-local/Dockerfiles/dockerfile/",
             "props": "type=zip;status=ready"
         }
     ]
